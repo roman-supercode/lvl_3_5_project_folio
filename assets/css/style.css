@@ -18,11 +18,13 @@
     margin: 0;
     font-family: OpenSans-Regular;
     box-sizing: border-box;
+    font-weight: 400;
 }
 
 html {
     font-size: 10px;
     max-width: 1920px;
+    color: #282B29;
 }
 
 /* =====================
@@ -35,6 +37,7 @@ header {
 
 header nav {
     font-size: 1.8rem;
+    color: #042A5A;
     padding: 1rem 16.5rem 1.5rem 16.5rem;
     display: flex;
     justify-content: space-between;
@@ -48,7 +51,9 @@ header nav {
 }
 
 header div {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header div h1 {
@@ -56,23 +61,156 @@ header div h1 {
     font-size: 13rem;
     color: #042A5A;
     font-weight: 400;
+    width: 70%;
+    text-align: center;
     margin: 2rem 14rem;
     border-bottom: 2px solid #042A5A;
 }
 
 header div figure {
-    padding-top: 30px;
-    padding-bottom: 100px;
+    padding-top: 3rem;
+    padding-bottom: 15rem;
     font-size: 2rem;
 }
 
 header div figure figcaption span {
     font-family: Athene;
+    color: #042A5A;
 }
+
 header div figure figcaption {
-    padding-top: 20px;
+    padding-top: 3rem;
+    color: #042A5A;
 }
+
+
+/* TODO:
+- Bindestrich stylen
+ */
 
 /* =====================
     Main Styles
 ====================== */
+.section__rosa {
+    background-color: #F4C4C4;
+    padding-right: 7.5rem;
+}
+
+.section__rosa h4 {
+    font-size: 1.2rem;
+    padding: 8rem 0 4rem 8.1rem;
+}
+
+.section__rosa h2 {
+    font-family: Athene;
+    font-size: 13rem;
+    font-weight: 400;
+}
+
+.section__rosa article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.section__rosa article p:nth-of-type(1) {
+    width: 33%;
+}
+
+.section__rosa article p:nth-of-type(2) {
+    text-align: right;
+    margin-top: 6rem;
+}
+
+.section__rosa div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.section__rosa div:nth-of-type(2) {
+    padding: 20px;
+    width: 10%;
+
+}
+
+/* _______________________ */
+
+.section__gold {
+    background-color: #DEB873;
+    padding-left: 7.5rem;
+}
+
+.section__gold h4 {
+    font-size: 1.2rem;
+    padding: 8rem 8.1rem 4rem 0;
+    text-align: right;
+}
+
+.section__gold h2 {
+    font-family: Athene;
+    font-size: 13rem;
+    font-weight: 400;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====================
+    Footer Styles
+====================== */
+footer {
+    padding-right: 7.5rem;
+    background-color: #D2D2D2;
+    color: #388883;
+}
+
+/* Footer Style - Seitenanzahl, Überschrift, Text */
+footer h4 {
+    font-size: 1.2rem;
+    padding: 8rem 0 4rem 8.1rem;
+}
+
+footer h2 {
+    font-family: Athene;
+    font-size: 13rem;
+    font-weight: 400;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer div p {
+    width: 22%;
+    font-size: 1.5rem;
+}
+
+/* Footer Contact-List Style mit Hovereffekt */
+footer ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+footer ul li {
+    padding: 0.5rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #388883;
+    font-size: 1.5rem;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
