@@ -67,6 +67,11 @@ header div h1 {
     border-bottom: 2px solid #042A5A;
 }
 
+header div h1 span {
+    letter-spacing: -11px;
+    font-weight: lighter;
+}
+
 header div figure {
     padding-top: 3rem;
     padding-bottom: 15rem;
@@ -83,10 +88,6 @@ header div figure figcaption {
     color: #042A5A;
 }
 
-
-/* TODO:
-- Bindestrich stylen
- */
 
 /* =====================
     Main Styles
@@ -113,31 +114,46 @@ header div figure figcaption {
     align-items: flex-end;
 }
 
-.section__rosa article p:nth-of-type(1) {
+.section__rosa article p {
     width: 33%;
+    font-size: 1.4rem;
 }
 
-.section__rosa article p:nth-of-type(2) {
+.section__rosa article h3 {
     text-align: right;
     margin-top: 6rem;
+    border-bottom: 1px solid;
+    width: 33%;
 }
 
 .section__rosa div {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    width: 33%;
+    padding: 3rem 0;
 }
 
-.section__rosa div:nth-of-type(2) {
-    padding: 20px;
-    width: 10%;
 
+main section .table_p {
+    display: flex;
+    flex-direction: row;
 }
+
+.section__rosa article img {
+    width: 16rem;
+    margin: 7.5rem 0;
+}
+
+/* TODO:
+1. in der Tabelle die zweite Spalte linksbündig ausrichten */
 
 /* _______________________ */
 
 .section__gold {
     background-color: #DEB873;
+    color: #7D2222;
     padding-left: 7.5rem;
 }
 
@@ -154,15 +170,40 @@ header div figure figcaption {
     text-align: right;
 }
 
+.section__gold p {
+    width: 32%;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    margin-bottom: 10rem;
+}
+
+.section__gold div {
+    display: flex;
+    width: 80%;
+    margin-right: 7.5rem;
+    padding: 10rem 0;
+}
+
+.section__gold div img {
+    width: 55%;
+}
+
+.section__gold div h3 {
+    font-family: Athene;
+    font-size: 5rem;
+}
+
+.section__gold div:nth-of-type(2) {
+    text-align: right;
+}
+
+.section__gold div:nth-of-type(4) {
+    text-align: right;
+}
 
 
-
-
-
-
-
-
-
+/* TODO:
+1. Schrift auf dem Bild */
 
 /* =====================
     Footer Styles
